@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Testing Tool</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Visual Testing Tool</h1>
+  <form action="/capture-baseline" method="post">
+    <label for="url">Адрес:</label>
+    <input type="url" id="url" name="url" required>
+    <button type="submit">Собрать эталоны</button>
+  </form>
+  <form action="/run-tests" method="post">
+    <label for="url">Адрес:</label>
+    <input type="url" id="url" name="url" required>
+    <button type="submit">Выполнить тесты</button>
+  </form>
+</body>
+</html>

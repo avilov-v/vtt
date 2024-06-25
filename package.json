@@ -1,0 +1,23 @@
+{
+  "name": "visual-testing-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:playwright": "node playwright-tests/visual-test.js",
+    "test:cypress": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cypress": "^13.12.0",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "fs-extra": "^11.2.0",
+    "pixelmatch": "^5.3.0",
+    "playwright": "^1.44.1",
+    "pngjs": "^7.0.0"
+  }
+}
