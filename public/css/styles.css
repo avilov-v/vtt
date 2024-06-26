@@ -14,6 +14,12 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2 {
+  width: 100px;
+  font-size: medium;
+  margin-right: 10px;
+}
+
 form {
   margin-bottom: 20px;
 }
@@ -41,17 +47,22 @@ button:hover {
 
 .results-container {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
+}
+
+.results-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1900px;
 }
 
 .results-item {
   text-align: center;
-  flex: 1;
-  margin: 0 10px;
 }
 
 .results-item img {
@@ -63,4 +74,57 @@ button:hover {
 
 .results-item h3 {
   margin-top: 10px;
+}
+
+/* Стили для модального окна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.modal-nav span {
+  cursor: pointer;
+  color: white;
+  font-size: 35px;
+  user-select: none;
 }
